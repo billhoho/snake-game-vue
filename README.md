@@ -1,5 +1,22 @@
-# Vue 3 + Vite
-
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Vercel Link
+https://snake-delta-one.vercel.app/
+## Design Concept
+本作品將傳統的 Snake 遊戲重新定義為一款「戰鬥進化」遊戲。設計核心在於將原版的「單純生存」轉化為「戰略成長」。我引入了 HP 系統與敵人機制，玩家不再是單純地收集食物，而是必須透過戰鬥來獲取成長。
+遊戲採用隨機生成的迷宮，增加了空間探索的挑戰。為了提升操作深度，我設計了「身體翻轉 (U-Turn)」與「加速衝刺」機制，讓玩家在面對強敵或陷入死胡同時有更多應對手段。最終目標是將 HP 提升至 999 以觸發最終 BOSS 戰，為遊戲提供明確的終局目標與成就感。
+## How My Version Is Different
+我的版本與原版 Snake 的最大差異在於從「收集」變成了「戰鬥」。
+1. **戰鬥進化系統**：原版是吃豆子長大，我的版本是「吃掉比自己弱的敵人」來增加 HP。
+2. **環境挑戰**：加入了隨機迷宮，使路徑規劃變得至關重要。
+3. **戰略機制**：引入了護盾 (Shield) 與身體翻轉 (U-Turn) 邏輯，讓玩家能主動掌控生存機率。
+4. **目標導向**：設定了 HP 閾值來觸發 BOSS 戰，將遊戲體驗從「無限生存」提升至「挑戰目標」。
+## How To Play
+**操作方式：**
+- **移動**：使用 `方向鍵` 或畫面下方的 `虛擬按鍵` 控制方向。
+- **加速**：按下 `Shift` 鍵可加快移動速度，用於快速接近目標或逃脫。
+- **翻轉 (U-Turn)**：按下 `空白鍵` 或 `Enter` 可瞬間反轉身體方向，是脫困的關鍵技巧。
+- **暫停/開始**：點擊畫面右上角的 `⏸️` 暫停遊戲，或在開始介面點擊 `START GAME`。
+**核心邏輯：**
+- **成長**：尋找 HP 比你低的敵人並將其吞噬 $\rightarrow$ 增加 HP。
+- **生存**：避免撞牆、咬到自己，或被比你強的敵人擊敗。
+- **防禦**：收集藍色護盾可抵擋一次傷害。
+- **挑戰**：將 HP 練至 999 $\rightarrow$ 迎接最終 BOSS。
